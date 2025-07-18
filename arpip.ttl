@@ -51,8 +51,6 @@
     a dct:BibliographicResource ,
         fabio:Dataset .
 
-https://doi.org/10.1093/sysbio/syac050
-
 # related article / appendices
 <https://doi.org/10.5281/zenodo.7078704>
     dct:relation <https://doi.org/10.5061/dryad.wstqjq2nj> ;

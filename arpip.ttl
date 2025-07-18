@@ -48,8 +48,7 @@
         "Public Domain"^^xsd:string ;
     dct:hasPart <https://datadryad.org/downloads/file_stream/1688696> ,
         <https://datadryad.org/downloads/file_stream/1688697> ;
-    a dct:BibliographicResource ,
-        fabio:Dataset .
+    a fabio:Dataset .
 
 # related article / appendices
 <https://doi.org/10.5281/zenodo.7078704>
@@ -103,16 +102,16 @@ ex:MariaAnisimova
 
 # readme in Markdown format
 <https://datadryad.org/downloads/file_stream/1688696>
-    a fabio:Dcoument ;
     dcat:byteSize "9.34 KB"^^xsd:byte ;
     dct:format dct:MediaType ;
-    a fabio:InstructionManual .
+    a fabio:Document,
+        fabio:InstructionManual .
 
 # dataset for download in ZIP format
 <https://datadryad.org/downloads/file_stream/1688697>
-    a fabio:Dataset ;
     dcat:byteSize "15.63 MB"^^xsd:byte ;
-    dct:format dct:MediaType .
+    dct:format dct:MediaType ;
+    a fabio:Dataset .
 
 # article
 <https://doi.org/10.1093/sysbio/syac050>

@@ -1,0 +1,87 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix coar: <http://purl.org/coar/resource_type/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Article
+<https://datadryad.org/dataset/doi:10.5061/dryad.wstqjq2nj>
+    dct:creator <http://example.org/ManuelGil> ,
+        <https://orcid.org/0000-0001-5858-4182> ,
+        <https://orcid.org/0000-0002-3512-0032> ,
+        <https://orcid.org/0000-0002-3499-6200> ,
+        <http://example.org/MariaAnisimova> ;
+    dc:title "ARPIP: Ancestral sequence Reconstruction with insertions and deletions under the Poisson Indel Process"^^xsd:string ;
+    fabio:hasPublicationYear "2022"^^xsd:gYear ;
+    prism:publicationDate "2022-07-26"^^xsd:date ;
+    dct:isPartOf <https://doi.org/10.1093/sysbio/syac050> ;
+    dct:subject "Computer and information sciences"^^xsd:string ,
+        "ancestral sequences"^^xsd:string ,
+        "coronaviridae"^^xsd:string ,
+        "Dynamic programming"^^xsd:string ,
+        "evolutionary stochastic process"^^xsd:string ,
+        "indel"^^xsd:string ,
+        "joint ancestral sequence reconstruction"^^xsd:string ,
+        "maximum likelihood ancestral reconstruction"^^xsd:string ,
+        "Poisson indel Process"^^xsd:string ,
+        "SARS-CoV"^^xsd:string ;
+    dct:license "Public Domain"^^xsd:string ;
+    dct:hasPart <https://datadryad.org/downloads/file_stream/1688696> ,
+        <https://datadryad.org/downloads/file_stream/1688697> ;
+    a dct:BibliographicResource .
+
+# Creator Manuel Gil
+<http://example.org/ManuelGil>
+    foaf:firstName "Manuel"^^xsd:string ;
+    foaf:lastName "Gil"^^xsd:string ;
+    foaf:mbox <mailto:manuel.gil@zhaw.ch> ;
+    foaf:workingplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/giln> ;
+    a foaf:Person .
+
+# Massimo Maiolo
+<https://orcid.org/0000-0001-5858-4182>
+    foaf:firstName "Massimo"^^xsd:string ;
+    foaf:lastName "Maiolo"^^xsd:string ;
+    a foaf:Person .
+
+# Creator Gholamhossein Jowkar
+<https://orcid.org/0000-0002-3512-0032>
+    foaf:firstName "Gholamhossein"^^xsd:string ;
+    foaf:lastName "Jowkar"^^xsd:string ;
+    a foaf:Person .
+
+# Creator Jūlija Pečerska
+<https://orcid.org/0000-0002-3499-6200>
+    foaf:firstName "Jūlija"^^xsd:string ;
+    foaf:lastName "Pečerska"^^xsd:string ;
+    foaf:mbox <mailto:julija.pecerska@zhaw.ch> ;
+    foaf:workingplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/pece> ;
+    a foaf:Person .
+
+# Creator Maria Anisimova
+<http://example.org/MariaAnisimova>
+    foaf:firstName "Maria"^^xsd:string ;
+    foaf:lastName "Anisimova"^^xsd:string ;
+    foaf:mbox <mailto:maria.anisimova@zhaw.ch> ;
+    foaf:workingplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/anis> ;
+    a foaf:Person .
+
+# Dataset for download in ZIP format
+<https://datadryad.org/downloads/file_stream/1688697>
+    a fabio:Dataset ;
+    dcat:byteSize "15.63 MB"^^xsd:byte ;
+    dct:format dct:MediaType .
+
+# Journal
+<https://doi.org/10.1093/sysbio/syac050>
+    bibo:issn "1063-5157"^^xsd:string ;
+    dc:title "Systematic Biology"^^xsd:string ;
+    dct:issued "2022-03"^^xsd:gYearMonth ;
+    a bibo:Journal .

@@ -24,6 +24,10 @@
     dct:modified "2022-09-14"^^xsd:date ;
     dct:isPartOf <https://doi.org/10.1093/sysbio/syac050> ;
     dct:relation <https://doi.org/10.5281/zenodo.7078704> ;
+    bibo:numPages "12"^^xsd:integer;
+    bibo:pageStart "307"^^xsd:integer ;
+    bibo:pageEnd "318"^^xsd:integer ;
+    bibo:pages "307-318"^^xsd:string ;
     dct:subject "computer and information sciences"^^xsd:string ,
         "ancestral sequences"^^xsd:string ,
         "coronaviridae"^^xsd:string ,
@@ -45,12 +49,18 @@
     a dct:BibliographicResource ,
         bibo:Article .
 
-# related article
+# related article / appendices
 <https://doi.org/10.5281/zenodo.7078704>
-    dct:relation <https://datadryad.org/dataset/doi:10.5061/dryad.wstqjq2nj> ;
-    <https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1>;
-    "0c1f6e998da89735e3bb5200f8d81977"^^xsd:string ;
+    dct:relation <https://doi.org/10.5061/dryad.wstqjq2nj> ;
+    dct:hasFormat <https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1> ;
+    dct:isPartOf <https://doi.org/10.5061/dryad.wstqjq2nj> ;
     a bibo:Article .
+
+# appendices in PDF format
+<https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1>
+    dct:format "application/pdf"^^xsd:string ;
+    "0c1f6e998da89735e3bb5200f8d81977"^^xsd:string ;
+    a bibo:Document .
 
 # creator Manuel Gil
 <http://example.org/ManuelGil>

@@ -4,8 +4,10 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prism: <http://prismstandard.org/namespaces/basic/2.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -13,11 +15,11 @@
 
 # article
 <https://doi.org/10.5061/dryad.wstqjq2nj>
-    dct:creator <http://example.org/ManuelGil> ,
+    dct:creator ex:ManuelGil ,
         <https://orcid.org/0000-0001-5858-4182> ,
         <https://orcid.org/0000-0002-3512-0032> ,
         <https://orcid.org/0000-0002-3499-6200> ,
-        <http://example.org/MariaAnisimova> ;
+        ex:MariaAnisimova ;
     dc:title "ARPIP: Ancestral sequence Reconstruction with insertions and deletions under the Poisson Indel Process"^^xsd:string ;
     fabio:hasPublicationYear "2022"^^xsd:gYear ;
     prism:publicationDate "2022-07-26"^^xsd:date ;
@@ -59,41 +61,41 @@
 # appendices in PDF format
 <https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1>
     dct:format "application/pdf"^^xsd:string ;
-    "0c1f6e998da89735e3bb5200f8d81977"^^xsd:string ;
+    owl:hasChecksum "0c1f6e998da89735e3bb5200f8d81977"^^xsd:string ;
     a bibo:Document .
 
 # creator Manuel Gil
-<http://example.org/ManuelGil>
-    foaf:firstName "Manuel"^^xsd:string ;
-    foaf:lastName "Gil"^^xsd:string ;
+ex:ManuelGil
+    foaf:givenName "Manuel"^^xsd:string ;
+    foaf:familyName "Gil"^^xsd:string ;
     foaf:mbox <mailto:manuel.gil@zhaw.ch> ;
     foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/giln> ;
     a foaf:Person .
 
 # Massimo Maiolo
 <https://orcid.org/0000-0001-5858-4182>
-    foaf:firstName "Massimo"^^xsd:string ;
-    foaf:lastName "Maiolo"^^xsd:string ;
+    foaf:givenName "Massimo"^^xsd:string ;
+    foaf:familyName "Maiolo"^^xsd:string ;
     a foaf:Person .
 
 # creator Gholamhossein Jowkar
 <https://orcid.org/0000-0002-3512-0032>
-    foaf:firstName "Gholamhossein"^^xsd:string ;
-    foaf:lastName "Jowkar"^^xsd:string ;
+    foaf:givenName "Gholamhossein"^^xsd:string ;
+    foaf:familyName "Jowkar"^^xsd:string ;
     a foaf:Person .
 
 # creator Jūlija Pečerska
 <https://orcid.org/0000-0002-3499-6200>
-    foaf:firstName "Jūlija"^^xsd:string ;
-    foaf:lastName "Pečerska"^^xsd:string ;
+    foaf:givenName "Jūlija"^^xsd:string ;
+    foaf:familyName "Pečerska"^^xsd:string ;
     foaf:mbox <mailto:julija.pecerska@zhaw.ch> ;
     foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/pece> ;
     a foaf:Person .
 
 # creator Maria Anisimova
-<http://example.org/MariaAnisimova>
-    foaf:firstName "Maria"^^xsd:string ;
-    foaf:lastName "Anisimova"^^xsd:string ;
+ex:MariaAnisimova
+    foaf:givenName "Maria"^^xsd:string ;
+    foaf:familyName "Anisimova"^^xsd:string ;
     foaf:mbox <mailto:maria.anisimova@zhaw.ch> ;
     foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/anis> ;
     a foaf:Person .
@@ -119,8 +121,11 @@
     dct:issued "2022-03"^^xsd:gYearMonth ;
     a bibo:Journal .
 
+# license
 <https://creativecommons.org/publicdomain/zero/1.0/> a dct:RightsStatement .
 
+# ZHAW
 <http://viaf.org/viaf/152303235>
     a foaf:Organisation ;
-    foaf:name "Zürcher Hochschule für Angewandte Wissenschaften"^^xsd:string .
+    foaf:name "Zürcher Hochschule für Angewandte Wissenschaften"^^xsd:string ;
+    foaf:homepage <https://www.zhaw.ch/> .

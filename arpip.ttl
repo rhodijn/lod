@@ -13,7 +13,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# article
+# dataset
 <https://doi.org/10.5061/dryad.wstqjq2nj>
     dct:creator ex:ManuelGil ,
         <https://orcid.org/0000-0001-5858-4182> ,
@@ -49,14 +49,17 @@
     dct:hasPart <https://datadryad.org/downloads/file_stream/1688696> ,
         <https://datadryad.org/downloads/file_stream/1688697> ;
     a dct:BibliographicResource ,
-        bibo:Article .
+        fabio:Dataset .
+
+https://doi.org/10.1093/sysbio/syac050
 
 # related article / appendices
 <https://doi.org/10.5281/zenodo.7078704>
     dct:relation <https://doi.org/10.5061/dryad.wstqjq2nj> ;
     dct:hasFormat <https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1> ;
     dct:isPartOf <https://doi.org/10.5061/dryad.wstqjq2nj> ;
-    a bibo:Article .
+    a dct:BibliographicResource ,
+        bibo:Article .
 
 # appendices in PDF format
 <https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1>
@@ -113,13 +116,14 @@ ex:MariaAnisimova
     dcat:byteSize "15.63 MB"^^xsd:byte ;
     dct:format dct:MediaType .
 
-# journal
+# article
 <https://doi.org/10.1093/sysbio/syac050>
     bibo:issn "1063-5157"^^xsd:string ;
     bibo:volume "72"^^xsd:integer ;
     dc:title "Systematic Biology"^^xsd:string ;
     dct:issued "2022-03"^^xsd:gYearMonth ;
-    a bibo:Journal .
+    a dct:BibliographicResource ,
+        bibo:Article .
 
 # license
 <https://creativecommons.org/publicdomain/zero/1.0/> a dct:RightsStatement .

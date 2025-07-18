@@ -12,7 +12,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # article
-<https://datadryad.org/dataset/doi:10.5061/dryad.wstqjq2nj>
+<https://doi.org/10.5061/dryad.wstqjq2nj>
     dct:creator <http://example.org/ManuelGil> ,
         <https://orcid.org/0000-0001-5858-4182> ,
         <https://orcid.org/0000-0002-3512-0032> ,
@@ -34,6 +34,10 @@
         "maximum likelihood ancestral reconstruction"^^xsd:string ,
         "Poisson indel Process"^^xsd:string ,
         "SARS-CoV"^^xsd:string ;
+    dct:abstract """
+    Modern phylogenetic methods allow inference of ancestral molecular sequences given an alignment and phylogeny relating present day sequences. This provides insight into the evolutionary history of molecules, helping to understand gene function and to study biological processes such as adaptation and convergent evolution across a variety of applications. Here we propose a dynamic programming algorithm for fast joint likelihood-based reconstruction of ancestral sequences under the Poisson Indel Process (PIP). Unlike previous approaches, our method, named ARPIP, enables the reconstruction with insertions and deletions based on an explicit indel model. Consequently, inferred indel events have an explicit biological interpretation. Likelihood computation is achieved in linear time with respect to the number of sequences. Our method consists of two steps, namely finding the most probable indel points and reconstructing ancestral sequences. First, we find the most likely indel points and prune the phylogeny to reflect the insertion and deletion events per site. Second, we infer the ancestral states on the pruned subtree in a manner similar to FastML. We applied ARPIP on simulated datasets and on real data from the Betacoronavirus genus. ARPIP reconstructs both the indel events and substitutions with a high degree of accuracy. Our method fares well when compared to established state-of-the-art methods such as FastML and PAML. Moreover, the method can be extended to explore both optimal and suboptimal reconstructions, include rate heterogeneity through time and more. We believe it will expand the range of novel applications of ancestral sequence reconstruction.
+    """ ;
+    dct:bibliographicCitation "Jowkar, Gholamhossein; Pečerska, Jūlija; Maiolo, Massimo et al. (2022). ARPIP: Ancestral sequence Reconstruction with insertions and deletions under the Poisson Indel Process [Dataset]. Dryad. https://doi.org/10.5061/dryad.wstqjq2nj"^^xsd:string ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ,
         "Public Domain"^^xsd:string ;
     dct:hasPart <https://datadryad.org/downloads/file_stream/1688696> ,
@@ -43,13 +47,17 @@
 
 # related article
 <https://doi.org/10.5281/zenodo.7078704>
+    dct:relation <https://datadryad.org/dataset/doi:10.5061/dryad.wstqjq2nj> ;
+    <https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1>;
+    "0c1f6e998da89735e3bb5200f8d81977"^^xsd:string ;
+    a bibo:Article .
 
 # creator Manuel Gil
 <http://example.org/ManuelGil>
     foaf:firstName "Manuel"^^xsd:string ;
     foaf:lastName "Gil"^^xsd:string ;
     foaf:mbox <mailto:manuel.gil@zhaw.ch> ;
-    foaf:workingplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/giln> ;
+    foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/giln> ;
     a foaf:Person .
 
 # Massimo Maiolo
@@ -69,7 +77,7 @@
     foaf:firstName "Jūlija"^^xsd:string ;
     foaf:lastName "Pečerska"^^xsd:string ;
     foaf:mbox <mailto:julija.pecerska@zhaw.ch> ;
-    foaf:workingplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/pece> ;
+    foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/pece> ;
     a foaf:Person .
 
 # creator Maria Anisimova
@@ -77,7 +85,7 @@
     foaf:firstName "Maria"^^xsd:string ;
     foaf:lastName "Anisimova"^^xsd:string ;
     foaf:mbox <mailto:maria.anisimova@zhaw.ch> ;
-    foaf:workingplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/anis> ;
+    foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/anis> ;
     a foaf:Person .
 
 # readme in Markdown format
@@ -102,3 +110,7 @@
     a bibo:Journal .
 
 <https://creativecommons.org/publicdomain/zero/1.0/> a dct:RightsStatement .
+
+<http://viaf.org/viaf/152303235>
+    a foaf:Organisation ;
+    foaf:name "Zürcher Hochschule für Angewandte Wissenschaften"^^xsd:string .

@@ -1,3 +1,4 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix coar: <http://purl.org/coar/resource_type/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .

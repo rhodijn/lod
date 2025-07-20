@@ -58,6 +58,7 @@ g.add((s, p, ns_bibo.Article))
 s = g.serialize(format='ttl')
 print(s)
 
+# generate json-ld file
 context = {
         '@language': 'en',
         'wtm': 'http://purl.org/heals/food/',

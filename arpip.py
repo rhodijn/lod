@@ -55,9 +55,6 @@ p = RDF.type
 g.add((s, p, ns_dct.BibliographicResource))
 g.add((s, p, ns_bibo.Article))
 
-for s, p, o in g:
-    print(s, p, o)
-
 s = g.serialize(format='ttl')
 print(s)
 

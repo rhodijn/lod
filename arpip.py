@@ -57,3 +57,22 @@ g.add((s, p, ns_bibo.Article))
 
 for s, p, o in g:
     print(s, p, o)
+
+s = g.serialize(format='ttl')
+print(s)
+
+context = {
+        '@language': 'en',
+        'wtm': 'http://purl.org/heals/food/',
+        'ind': 'http://purl.org/heals/ingredient/',
+    }
+
+data = g.serialize(
+    format='json-ld',
+    context=context,
+    indent=2,
+    encoding='utf-8',
+    )
+
+with open('arpip.jsonld', 'wb') as f:
+    f.write(data)

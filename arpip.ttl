@@ -17,9 +17,9 @@
 # dataset
 <https://doi.org/10.5061/dryad.wstqjq2nj>
     dct:creator ex:ManuelGil ,
-        <https://orcid.org/0000-0001-5858-4182> ,
-        <https://orcid.org/0000-0002-3512-0032> ,
-        <https://orcid.org/0000-0002-3499-6200> ,
+        ex:MassimoMaiolo ,
+        ex:GholamhosseinJowkar ,
+        ex:JūlijaPečerska ,
         ex:MariaAnisimova ;
     dc:title "ARPIP: Ancestral sequence Reconstruction with insertions and deletions under the Poisson Indel Process"^^xsd:string ;
     fabio:hasPublicationYear "2022"^^xsd:gYear ;
@@ -55,9 +55,9 @@
 # article
 <https://doi.org/10.1093/sysbio/syac050>
     dct:creator ex:ManuelGil ,
-        <https://orcid.org/0000-0001-5858-4182> ,
-        <https://orcid.org/0000-0002-3512-0032> ,
-        <https://orcid.org/0000-0002-3499-6200> ,
+        ex:MassimoMaiolo ,
+        ex:GholamhosseinJowkar ,
+        ex:JūlijaPečerska ,
         ex:MariaAnisimova ;
     bibo:issn "1063-5157"^^xsd:string ;
     bibo:volume "72"^^xsd:integer ;
@@ -108,21 +108,24 @@ ex:ManuelGil
     a foaf:Person .
 
 # creator Massimo Maiolo
-<https://orcid.org/0000-0001-5858-4182>
+ex:MassimoMaiolo
     foaf:givenName "Massimo"^^xsd:string ;
     foaf:familyName "Maiolo"^^xsd:string ;
+    owl:sameAs <https://orcid.org/0000-0001-5858-4182> ;
     a foaf:Person .
 
 # creator Gholamhossein Jowkar
-<https://orcid.org/0000-0002-3512-0032>
+ex:GholamhosseinJowkar
     foaf:givenName "Gholamhossein"^^xsd:string ;
     foaf:familyName "Jowkar"^^xsd:string ;
+    owl:sameAs <https://orcid.org/0000-0002-3512-0032> ;
     a foaf:Person .
 
 # creator Jūlija Pečerska
-<https://orcid.org/0000-0002-3499-6200>
+ex:JūlijaPečerska
     foaf:givenName "Jūlija"^^xsd:string ;
     foaf:familyName "Pečerska"^^xsd:string ;
+    owl:sameAs <https://orcid.org/0000-0002-3499-6200> ;
     foaf:mbox <mailto:julija.pecerska@zhaw.ch> ;
     ex:worksFor <http://viaf.org/viaf/152303235> ;
     foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/pece> ;

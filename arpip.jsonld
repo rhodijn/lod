@@ -6,6 +6,13 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/sysbio/syac050",
+      "@type": [
+        "http://purl.org/dc/terms/BibliographicResource",
+        "http://purl.org/ontology/bibo/Article"
+      ]
+    },
+    {
       "@id": "https://datadryad.org/dataset/doi:10.5061/dryad.wstqjq2nj",
       "@type": "http://purl.org/spar/fabio/Dataset",
       "http://purl.org/dc/terms/creator": [
@@ -24,13 +31,6 @@
         {
           "@id": "http://example.org/MariaAnisimova"
         }
-      ]
-    },
-    {
-      "@id": "https://doi.org/10.1093/sysbio/syac050",
-      "@type": [
-        "http://purl.org/dc/terms/BibliographicResource",
-        "http://purl.org/ontology/bibo/Article"
       ]
     }
   ]

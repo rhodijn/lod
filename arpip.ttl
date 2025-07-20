@@ -25,7 +25,7 @@
     fabio:hasPublicationYear "2022"^^xsd:gYear ;
     prism:publicationDate "2022-07-26"^^xsd:date ;
     dct:modified "2022-09-14"^^xsd:date ;
-    dct:isPartOf <https://doi.org/10.1093/sysbio/syac050> ;
+    dct:relation <https://doi.org/10.1093/sysbio/syac050> ;
     dct:relation <https://doi.org/10.5281/zenodo.7078704> ;
     bibo:numPages "12"^^xsd:integer;
     bibo:pageStart "307"^^xsd:integer ;
@@ -49,9 +49,25 @@
         "Public Domain"^^xsd:string ;
     dct:hasPart <https://datadryad.org/downloads/file_stream/1688696> ,
         <https://datadryad.org/downloads/file_stream/1688697> ;
+    ex:fundedBy <http://viaf.org/viaf/150746866> ;
     a fabio:Dataset .
 
-# related article / appendices
+# article
+<https://doi.org/10.1093/sysbio/syac050>
+    dct:creator ex:ManuelGil ,
+        <https://orcid.org/0000-0001-5858-4182> ,
+        <https://orcid.org/0000-0002-3512-0032> ,
+        <https://orcid.org/0000-0002-3499-6200> ,
+        ex:MariaAnisimova ;
+    dc:title "ARPIP: Ancestral Sequence Reconstruction with Insertions and Deletions under the Poisson Indel Process"^^xsd:string ;
+    dct:bibliographicCitation "Gholamhossein Jowkar, Jūlija Pečerska, Massimo Maiolo, Manuel Gil, Maria Anisimova, ARPIP: Ancestral Sequence Reconstruction with Insertions and Deletions under the Poisson Indel Process, Systematic Biology, Volume 72, Issue 2, March 2023, Pages 307–318, https://doi.org/10.1093/sysbio/syac050"^^xsd:string ;
+    dct:license <https://creativecommons.org/licenses/by-nc/4.0/> ,
+        "Creative Commons CC BY-NC"^^xsd:string ;
+    dct:relation <https://doi.org/10.5061/dryad.wstqjq2nj> ;
+    a dct:BibliographicResource,
+        bibo:Article .
+
+# related appendices
 <https://doi.org/10.5281/zenodo.7078704>
     dct:relation <https://doi.org/10.5061/dryad.wstqjq2nj> ;
     dct:hasFormat <https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1> ;

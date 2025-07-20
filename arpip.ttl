@@ -86,10 +86,11 @@ ex:ManuelGil
     foaf:givenName "Manuel"^^xsd:string ;
     foaf:familyName "Gil"^^xsd:string ;
     foaf:mbox <mailto:manuel.gil@zhaw.ch> ;
+    ex:worksFor <http://viaf.org/viaf/152303235> ;
     foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/giln> ;
     a foaf:Person .
 
-# Massimo Maiolo
+# creator Massimo Maiolo
 <https://orcid.org/0000-0001-5858-4182>
     foaf:givenName "Massimo"^^xsd:string ;
     foaf:familyName "Maiolo"^^xsd:string ;
@@ -106,6 +107,7 @@ ex:ManuelGil
     foaf:givenName "Jūlija"^^xsd:string ;
     foaf:familyName "Pečerska"^^xsd:string ;
     foaf:mbox <mailto:julija.pecerska@zhaw.ch> ;
+    ex:worksFor <http://viaf.org/viaf/152303235> ;
     foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/pece> ;
     a foaf:Person .
 
@@ -114,6 +116,7 @@ ex:MariaAnisimova
     foaf:givenName "Maria"^^xsd:string ;
     foaf:familyName "Anisimova"^^xsd:string ;
     foaf:mbox <mailto:maria.anisimova@zhaw.ch> ;
+    ex:worksFor <http://viaf.org/viaf/152303235> ;
     foaf:workplaceHomepage <https://www.zhaw.ch/de/ueber-uns/person/anis> ;
     a foaf:Person .
 
@@ -139,8 +142,11 @@ ex:MariaAnisimova
     a dct:BibliographicResource ,
         bibo:Article .
 
-# license
+# public domain license
 <https://creativecommons.org/publicdomain/zero/1.0/> a dct:RightsStatement .
+
+# creative commons cc by-nc license
+<https://creativecommons.org/licenses/by-nc/4.0/> a dct:RightsStatement .
 
 # ZHAW
 <http://viaf.org/viaf/152303235>

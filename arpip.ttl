@@ -59,6 +59,10 @@
         <https://orcid.org/0000-0002-3512-0032> ,
         <https://orcid.org/0000-0002-3499-6200> ,
         ex:MariaAnisimova ;
+    bibo:issn "1063-5157"^^xsd:string ;
+    bibo:volume "72"^^xsd:integer ;
+    dc:title "Systematic Biology"^^xsd:string ;
+    dct:issued "2022-03"^^xsd:gYearMonth ;
     dc:title "ARPIP: Ancestral Sequence Reconstruction with Insertions and Deletions under the Poisson Indel Process"^^xsd:string ;
     dct:bibliographicCitation "Gholamhossein Jowkar, Jūlija Pečerska, Massimo Maiolo, Manuel Gil, Maria Anisimova, ARPIP: Ancestral Sequence Reconstruction with Insertions and Deletions under the Poisson Indel Process, Systematic Biology, Volume 72, Issue 2, March 2023, Pages 307–318, https://doi.org/10.1093/sysbio/syac050"^^xsd:string ;
     dct:license <https://creativecommons.org/licenses/by-nc/4.0/> ,
@@ -132,15 +136,6 @@ ex:MariaAnisimova
     dcat:byteSize "15.63 MB"^^xsd:byte ;
     dct:format ".zip"^^xsd:string ;
     a fabio:Dataset .
-
-# article
-<https://doi.org/10.1093/sysbio/syac050>
-    bibo:issn "1063-5157"^^xsd:string ;
-    bibo:volume "72"^^xsd:integer ;
-    dc:title "Systematic Biology"^^xsd:string ;
-    dct:issued "2022-03"^^xsd:gYearMonth ;
-    a dct:BibliographicResource ,
-        bibo:Article .
 
 # public domain license
 <https://creativecommons.org/publicdomain/zero/1.0/> a dct:RightsStatement .

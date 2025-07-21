@@ -6,6 +6,182 @@
   },
   "@graph": [
     {
+      "@id": "http://example.org/GholamhosseinJowkar",
+      "@type": "http://xmlns.com/foaf/0.1/Person",
+      "http://www.w3.org/2002/07/owl#sameAs": {
+        "@id": "https://orcid.org/0000-0002-3512-0032"
+      },
+      "http://xmlns.com/foaf/0.1/familyName": "Jowkar",
+      "http://xmlns.com/foaf/0.1/givenName": "Gholamhossein"
+    },
+    {
+      "@id": "https://doi.org/10.1093/sysbio/syac050",
+      "@type": [
+        "http://purl.org/dc/terms/BibliographicResource",
+        "http://purl.org/ontology/bibo/Article"
+      ],
+      "http://purl.org/dc/elements/1.1/title": "ARPIP: Ancestral Sequence Reconstruction with Insertions and Deletions under the Poisson Indel Process",
+      "http://purl.org/dc/terms/abstract": "Modern phylogenetic methods allow inference of ancestral molecular sequences given an alignment and phylogeny relating present day sequences. This provides insight into the evolutionary history of molecules, helping to understand gene function and to study biological processes such as adaptation and convergent evolution across a variety of applications. Here we propose a dynamic programming algorithm for fast joint likelihood-based reconstruction of ancestral sequences under the Poisson Indel Process (PIP). Unlike previous approaches, our method, named ARPIP, enables the reconstruction with insertions and deletions based on an explicit indel model. Consequently, inferred indel events have an explicit biological interpretation. Likelihood computation is achieved in linear time with respect to the number of sequences. Our method consists of two steps, namely finding the most probable indel points and reconstructing ancestral sequences. First, we find the most likely indel points and prune the phylogeny to reflect the insertion and deletion events per site. Second, we infer the ancestral states on the pruned subtree in a manner similar to FastML. We applied ARPIP on simulated datasets and on real data from the Betacoronavirus genus. ARPIP reconstructs both the indel events and substitutions with a high degree of accuracy. Our method fares well when compared to established state-of-the-art methods such as FastML and PAML. Moreover, the method can be extended to explore both optimal and suboptimal reconstructions, include rate heterogeneity through time and more. We believe it will expand the range of novel applications of ancestral sequence reconstruction.",
+      "http://purl.org/dc/terms/bibliographicCitation": "Modern phylogenetic methods allow inference of ancestral molecular sequences given an alignment and phylogeny relating present-day sequences. This provides insight into the evolutionary history of molecules, helping to understand gene function and to study biological processes such as adaptation and convergent evolution across a variety of applications. Here, we propose a dynamic programming algorithm for fast joint likelihood-based reconstruction of ancestral sequences under the Poisson Indel Process (PIP). Unlike previous approaches, our method, named ARPIP, enables the reconstruction with insertions and deletions based on an explicit indel model. Consequently, inferred indel events have an explicit biological interpretation. Likelihood computation is achieved in linear time with respect to the number of sequences. Our method consists of two steps, namely finding the most probable indel points and reconstructing ancestral sequences. First, we find the most likely indel points and prune the phylogeny to reflect the insertion and deletion events per site. Second, we infer the ancestral states on the pruned subtree in a manner similar to FastML. We applied ARPIP (Ancestral Reconstruction under PIP) on simulated data sets and on real data from the Betacoronavirus genus. ARPIP reconstructs both the indel events and substitutions with a high degree of accuracy. Our method fares well when compared to established state-of-the-art methods such as FastML and PAML. Moreover, the method can be extended to explore both optimal and suboptimal reconstructions, include rate heterogeneity through time and more. We believe it will expand the range of novel applications of ancestral sequence reconstruction. [Ancestral sequences; dynamic programming; evolutionary stochastic process; indel; joint ancestral sequence reconstruction; maximum likelihood; Poisson Indel Process; phylogeny; SARS-CoV.]",
+      "http://purl.org/dc/terms/creator": [
+        {
+          "@id": "http://example.org/ManuelGil"
+        },
+        {
+          "@id": "http://example.org/MassimoMaiolo"
+        },
+        {
+          "@id": "http://example.org/GholamhosseinJowkar"
+        },
+        {
+          "@id": "http://example.org/JūlijaPečerska"
+        },
+        {
+          "@id": "http://example.org/MariaAnisimova"
+        }
+      ],
+      "http://purl.org/dc/terms/issued": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
+        "@value": "2022-03"
+      },
+      "http://purl.org/dc/terms/license": [
+        {
+          "@id": "https://creativecommons.org/licenses/by-nc/4.0/"
+        },
+        "Creative Commons CC BY-NC"
+      ],
+      "http://purl.org/dc/terms/relation": {
+        "@id": "https://doi.org/10.5061/dryad.wstqjq2nj"
+      },
+      "http://purl.org/dc/terms/subject": [
+        "computer and information sciences",
+        "ancestral sequences",
+        "coronaviridae",
+        "dynamic programming",
+        "evolutionary stochastic process",
+        "indel",
+        "joint ancestral sequence reconstruction",
+        "maximum likelihood ancestral reconstruction",
+        "Poisson indel Process",
+        "SARS-CoV"
+      ],
+      "http://purl.org/ontology/bibo/issn": "1063-5157",
+      "http://purl.org/ontology/bibo/volume": 72
+    },
+    {
+      "@id": "https://datadryad.org/downloads/file_stream/1688697",
+      "@type": "http://purl.org/spar/fabio/Dataset",
+      "http://purl.org/dc/terms/hasFormat": {
+        "@type": "http://www.w3.org/2001/XMLSchema#bytestring",
+        "@value": ".zip"
+      },
+      "http://www.w3.org/ns/dcat#byteSize": {
+        "@type": "http://www.w3.org/2001/XMLSchema#byte",
+        "@value": "15.63 MB"
+      }
+    },
+    {
+      "@id": "http://example.org/MassimoMaiolo",
+      "@type": "http://xmlns.com/foaf/0.1/Person",
+      "http://www.w3.org/2002/07/owl#sameAs": {
+        "@id": "https://orcid.org/0000-0001-5858-4185"
+      },
+      "http://xmlns.com/foaf/0.1/familyName": "Maiolo",
+      "http://xmlns.com/foaf/0.1/givenName": "Massimo"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "@type": "http://purl.org/dc/terms/RightsStatement"
+    },
+    {
+      "@id": "http://viaf.org/viaf/152303235",
+      "@type": "http://xmlns.com/foaf/0.1/Organisation",
+      "http://xmlns.com/foaf/0.1/homepage": {
+        "@id": "https://www.zhaw.ch/"
+      },
+      "http://xmlns.com/foaf/0.1/name": "Zürcher Hochschule für Angewandte Wissenschaften"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7078704",
+      "@type": [
+        "http://purl.org/dc/terms/BibliographicResource",
+        "http://purl.org/ontology/bibo/Article"
+      ],
+      "http://purl.org/dc/terms/hasFormat": {
+        "@id": "https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1"
+      },
+      "http://purl.org/dc/terms/isPartof": {
+        "@id": "https://doi.org/10.5061/dryad.wstqjq2nj"
+      },
+      "http://purl.org/dc/terms/relation": {
+        "@id": "https://doi.org/10.5061/dryad.wstqjq2nj"
+      }
+    },
+    {
+      "@id": "http://example.org/ManuelGil",
+      "@type": "http://xmlns.com/foaf/0.1/Person",
+      "http://example.org/workplaceHomepage": {
+        "@id": "https://www.zhaw.ch/de/ueber-uns/person/giln"
+      },
+      "http://example.org/worksFor": {
+        "@id": "http://viaf.org/viaf/152303235"
+      },
+      "http://xmlns.com/foaf/0.1/familyName": "Gil",
+      "http://xmlns.com/foaf/0.1/givenName": "Manuel",
+      "http://xmlns.com/foaf/0.1/mbox": {
+        "@id": "mailto:manuel.gil@zhaw.ch"
+      }
+    },
+    {
+      "@id": "http://example.org/MariaAnisimova",
+      "@type": "http://xmlns.com/foaf/0.1/Person",
+      "http://example.org/workplaceHomepage": {
+        "@id": "https://www.zhaw.ch/de/ueber-uns/person/anis"
+      },
+      "http://example.org/worksFor": {
+        "@id": "http://viaf.org/viaf/152303235"
+      },
+      "http://xmlns.com/foaf/0.1/familyName": "Anisimova",
+      "http://xmlns.com/foaf/0.1/givenName": "Maria",
+      "http://xmlns.com/foaf/0.1/mbox": {
+        "@id": "mailto:maria.anisimova@zhaw.ch"
+      }
+    },
+    {
+      "@id": "https://datadryad.org/downloads/file_stream/1688696",
+      "@type": [
+        "http://purl.org/spar/fabio/Document",
+        "http://purl.org/spar/fabio/InstructionManual"
+      ],
+      "http://www.w3.org/ns/dcat#byteSize": {
+        "@type": "http://www.w3.org/2001/XMLSchema#byte",
+        "@value": "9.34 KB"
+      },
+      "http://www.w3.org/ns/dcat#hasFormat": ".md"
+    },
+    {
+      "@id": "http://example.org/JūlijaPečerska",
+      "@type": "http://xmlns.com/foaf/0.1/Person",
+      "http://example.org/workplaceHomepage": {
+        "@id": "https://www.zhaw.ch/de/ueber-uns/person/pece"
+      },
+      "http://example.org/worksFor": {
+        "@id": "http://viaf.org/viaf/152303235"
+      },
+      "http://www.w3.org/2002/07/owl#sameAs": {
+        "@id": "https://orcid.org/0000-0002-3499-6200"
+      },
+      "http://xmlns.com/foaf/0.1/familyName": "Pečerska",
+      "http://xmlns.com/foaf/0.1/givenName": "Jūlija",
+      "http://xmlns.com/foaf/0.1/mbox": {
+        "@id": "mailto:julija.pecerska@zhaw.ch"
+      }
+    },
+    {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "@type": "http://purl.org/dc/terms/RightsStatement"
+    },
+    {
       "@id": "https://datadryad.org/dataset/doi:10.5061/dryad.wstqjq2nj",
       "@type": "http://purl.org/spar/fabio/Dataset",
       "http://example.org/fundedBy": {
@@ -76,158 +252,10 @@
       "http://purl.org/spar/fabio/hasPublicationYear": 2022
     },
     {
-      "@id": "http://example.org/MassimoMaiolo",
-      "@type": "http://xmlns.com/foaf/0.1/Person",
-      "http://www.w3.org/2002/07/owl#sameAs": {
-        "@id": "https://orcid.org/0000-0001-5858-4185"
-      },
-      "http://xmlns.com/foaf/0.1/familyName": "Maiolo",
-      "http://xmlns.com/foaf/0.1/givenName": "Massimo"
-    },
-    {
-      "@id": "https://doi.org/10.5281/zenodo.7078704",
-      "@type": [
-        "http://purl.org/dc/terms/BibliographicResource",
-        "http://purl.org/ontology/bibo/Article"
-      ],
-      "http://purl.org/dc/terms/hasFormat": {
-        "@id": "https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1"
-      },
-      "http://purl.org/dc/terms/isPartof": {
-        "@id": "https://doi.org/10.5061/dryad.wstqjq2nj"
-      },
-      "http://purl.org/dc/terms/relation": {
-        "@id": "https://doi.org/10.5061/dryad.wstqjq2nj"
-      }
-    },
-    {
-      "@id": "https://datadryad.org/downloads/file_stream/1688696",
-      "@type": [
-        "http://purl.org/spar/fabio/Document",
-        "http://purl.org/spar/fabio/InstructionManual"
-      ],
-      "http://www.w3.org/ns/dcat#byteSize": {
-        "@type": "http://www.w3.org/2001/XMLSchema#byte",
-        "@value": "9.34 KB"
-      },
-      "http://www.w3.org/ns/dcat#hasFormat": ".md"
-    },
-    {
-      "@id": "http://example.org/GholamhosseinJowkar",
-      "@type": "http://xmlns.com/foaf/0.1/Person",
-      "http://www.w3.org/2002/07/owl#sameAs": {
-        "@id": "https://orcid.org/0000-0002-3512-0032"
-      },
-      "http://xmlns.com/foaf/0.1/familyName": "Jowkar",
-      "http://xmlns.com/foaf/0.1/givenName": "Gholamhossein"
-    },
-    {
-      "@id": "http://example.org/ManuelGil",
-      "@type": "http://xmlns.com/foaf/0.1/Person",
-      "http://example.org/workplaceHomepage": {
-        "@id": "https://www.zhaw.ch/de/ueber-uns/person/giln"
-      },
-      "http://example.org/worksFor": {
-        "@id": "http://viaf.org/viaf/152303235"
-      },
-      "http://xmlns.com/foaf/0.1/familyName": "Gil",
-      "http://xmlns.com/foaf/0.1/givenName": "Manuel",
-      "http://xmlns.com/foaf/0.1/mbox": {
-        "@id": "mailto:manuel.gil@zhaw.ch"
-      }
-    },
-    {
       "@id": "https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1",
       "@type": "http://purl.org/ontology/bibo/Document",
       "http://purl.org/dc/terms/hasFormat": "application/pdf",
       "http://www.w3.org/2002/07/owl#hasChecksum": "0c1f6e998da89735e3bb5200f8d81977"
-    },
-    {
-      "@id": "http://example.org/MariaAnisimova",
-      "@type": "http://xmlns.com/foaf/0.1/Person",
-      "http://example.org/workplaceHomepage": {
-        "@id": "https://www.zhaw.ch/de/ueber-uns/person/anis"
-      },
-      "http://example.org/worksFor": {
-        "@id": "http://viaf.org/viaf/152303235"
-      },
-      "http://xmlns.com/foaf/0.1/familyName": "Anisimova",
-      "http://xmlns.com/foaf/0.1/givenName": "Maria",
-      "http://xmlns.com/foaf/0.1/mbox": {
-        "@id": "mailto:maria.anisimova@zhaw.ch"
-      }
-    },
-    {
-      "@id": "http://example.org/JūlijaPečerska",
-      "@type": "http://xmlns.com/foaf/0.1/Person",
-      "http://example.org/workplaceHomepage": {
-        "@id": "https://www.zhaw.ch/de/ueber-uns/person/pece"
-      },
-      "http://example.org/worksFor": {
-        "@id": "http://viaf.org/viaf/152303235"
-      },
-      "http://www.w3.org/2002/07/owl#sameAs": {
-        "@id": "https://orcid.org/0000-0002-3499-6200"
-      },
-      "http://xmlns.com/foaf/0.1/familyName": "Pečerska",
-      "http://xmlns.com/foaf/0.1/givenName": "Jūlija",
-      "http://xmlns.com/foaf/0.1/mbox": {
-        "@id": "mailto:julija.pecerska@zhaw.ch"
-      }
-    },
-    {
-      "@id": "https://doi.org/10.1093/sysbio/syac050",
-      "@type": [
-        "http://purl.org/dc/terms/BibliographicResource",
-        "http://purl.org/ontology/bibo/Article"
-      ],
-      "http://purl.org/dc/elements/1.1/title": "ARPIP: Ancestral Sequence Reconstruction with Insertions and Deletions under the Poisson Indel Process",
-      "http://purl.org/dc/terms/abstract": "Modern phylogenetic methods allow inference of ancestral molecular sequences given an alignment and phylogeny relating present day sequences. This provides insight into the evolutionary history of molecules, helping to understand gene function and to study biological processes such as adaptation and convergent evolution across a variety of applications. Here we propose a dynamic programming algorithm for fast joint likelihood-based reconstruction of ancestral sequences under the Poisson Indel Process (PIP). Unlike previous approaches, our method, named ARPIP, enables the reconstruction with insertions and deletions based on an explicit indel model. Consequently, inferred indel events have an explicit biological interpretation. Likelihood computation is achieved in linear time with respect to the number of sequences. Our method consists of two steps, namely finding the most probable indel points and reconstructing ancestral sequences. First, we find the most likely indel points and prune the phylogeny to reflect the insertion and deletion events per site. Second, we infer the ancestral states on the pruned subtree in a manner similar to FastML. We applied ARPIP on simulated datasets and on real data from the Betacoronavirus genus. ARPIP reconstructs both the indel events and substitutions with a high degree of accuracy. Our method fares well when compared to established state-of-the-art methods such as FastML and PAML. Moreover, the method can be extended to explore both optimal and suboptimal reconstructions, include rate heterogeneity through time and more. We believe it will expand the range of novel applications of ancestral sequence reconstruction.",
-      "http://purl.org/dc/terms/bibliographicCitation": "Modern phylogenetic methods allow inference of ancestral molecular sequences given an alignment and phylogeny relating present-day sequences. This provides insight into the evolutionary history of molecules, helping to understand gene function and to study biological processes such as adaptation and convergent evolution across a variety of applications. Here, we propose a dynamic programming algorithm for fast joint likelihood-based reconstruction of ancestral sequences under the Poisson Indel Process (PIP). Unlike previous approaches, our method, named ARPIP, enables the reconstruction with insertions and deletions based on an explicit indel model. Consequently, inferred indel events have an explicit biological interpretation. Likelihood computation is achieved in linear time with respect to the number of sequences. Our method consists of two steps, namely finding the most probable indel points and reconstructing ancestral sequences. First, we find the most likely indel points and prune the phylogeny to reflect the insertion and deletion events per site. Second, we infer the ancestral states on the pruned subtree in a manner similar to FastML. We applied ARPIP (Ancestral Reconstruction under PIP) on simulated data sets and on real data from the Betacoronavirus genus. ARPIP reconstructs both the indel events and substitutions with a high degree of accuracy. Our method fares well when compared to established state-of-the-art methods such as FastML and PAML. Moreover, the method can be extended to explore both optimal and suboptimal reconstructions, include rate heterogeneity through time and more. We believe it will expand the range of novel applications of ancestral sequence reconstruction. [Ancestral sequences; dynamic programming; evolutionary stochastic process; indel; joint ancestral sequence reconstruction; maximum likelihood; Poisson Indel Process; phylogeny; SARS-CoV.]",
-      "http://purl.org/dc/terms/creator": [
-        {
-          "@id": "http://example.org/ManuelGil"
-        },
-        {
-          "@id": "http://example.org/MassimoMaiolo"
-        },
-        {
-          "@id": "http://example.org/GholamhosseinJowkar"
-        },
-        {
-          "@id": "http://example.org/JūlijaPečerska"
-        },
-        {
-          "@id": "http://example.org/MariaAnisimova"
-        }
-      ],
-      "http://purl.org/dc/terms/issued": {
-        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
-        "@value": "2022-03"
-      },
-      "http://purl.org/dc/terms/license": [
-        {
-          "@id": "https://creativecommons.org/licenses/by-nc/4.0/"
-        },
-        "Creative Commons CC BY-NC"
-      ],
-      "http://purl.org/dc/terms/relation": {
-        "@id": "https://doi.org/10.5061/dryad.wstqjq2nj"
-      },
-      "http://purl.org/dc/terms/subject": [
-        "computer and information sciences",
-        "ancestral sequences",
-        "coronaviridae",
-        "dynamic programming",
-        "evolutionary stochastic process",
-        "indel",
-        "joint ancestral sequence reconstruction",
-        "maximum likelihood ancestral reconstruction",
-        "Poisson indel Process",
-        "SARS-CoV"
-      ],
-      "http://purl.org/ontology/bibo/issn": "1063-5157",
-      "http://purl.org/ontology/bibo/volume": 72
     }
   ]
 }

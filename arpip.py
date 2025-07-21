@@ -232,6 +232,30 @@ g.add((s, rdflib.RDF.type, ns_fabio.Document))
 g.add((s, rdflib.RDF.type, ns_fabio.InstructionManual))
 
 
+# dataset for download in ZIP format
+s = rdflib.URIRef('https://datadryad.org/downloads/file_stream/1688697')
+g.add((s, ns_dcat.byteSize, rdflib.Literal('15.63 MB', datatype=rdflib.XSD.byte)))
+g.add((s, ns_dct.hasFormat, rdflib.Literal('.zip', datatype=rdflib.XSD.bytestring)))
+g.add((s, rdflib.RDF.type, ns_fabio.Dataset))
+
+
+# public domain license
+s = rdflib.URIRef('https://creativecommons.org/publicdomain/zero/1.0/')
+g.add((s, rdflib.RDF.type, ns_dct.RightsStatement))
+
+
+# creative commons cc by-nc license
+s = rdflib.URIRef('https://creativecommons.org/licenses/by-nc/4.0/')
+g.add((s, rdflib.RDF.type, ns_dct.RightsStatement))
+
+
+# ZHAW
+s = rdflib.URIRef('http://viaf.org/viaf/152303235')
+g.add((s, rdflib.RDF.type, ns_foaf.Organisation))
+g.add((s, ns_foaf.name, rdflib.Literal('Zürcher Hochschule für Angewandte Wissenschaften', datatype=rdflib.XSD.string)))
+g.add((s, ns_foaf.homepage, rdflib.URIRef('https://www.zhaw.ch/')))
+
+
 # serialize turtle
 d = g.serialize(format='ttl')
 print(d)

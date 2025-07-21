@@ -89,7 +89,7 @@
 
 # appendices in PDF format
 <https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1>
-    dct:format "application/pdf"^^xsd:string ;
+    dct:hasFormat "application/pdf"^^xsd:string ;
     owl:hasChecksum "0c1f6e998da89735e3bb5200f8d81977"^^xsd:string ;
     a bibo:Document .
 

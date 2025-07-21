@@ -111,6 +111,7 @@ g.add((s, ns_dct.hasPart, rdflib.URIRef('https://datadryad.org/downloads/file_st
 
 g.add((s, ns_ex.fundedBy, rdflib.URIRef('http://viaf.org/viaf/150746866')))
 
+
 # article
 s = rdflib.URIRef('https://doi.org/10.1093/sysbio/syac050')
 p = ns_dct.creator
@@ -128,14 +129,94 @@ g.add((s, ns_dc.title, rdflib.Literal('ARPIP: Ancestral Sequence Reconstruction 
 
 g.add((s, ns_dct.issued, rdflib.Literal('2022-03', datatype=rdflib.XSD.gYearMonth)))
 
+p = ns_dct.subject
+g.add((s, p, rdflib.Literal('computer and information sciences', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('ancestral sequences', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('coronaviridae', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('dynamic programming', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('evolutionary stochastic process', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('indel', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('joint ancestral sequence reconstruction', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('maximum likelihood ancestral reconstruction', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('Poisson indel Process', datatype=rdflib.XSD.string)))
+g.add((s, p, rdflib.Literal('SARS-CoV', datatype=rdflib.XSD.string)))
+
+o = rdflib.Literal('Modern phylogenetic methods allow inference of ancestral molecular sequences given an alignment and phylogeny relating present day sequences. This provides insight into the evolutionary history of molecules, helping to understand gene function and to study biological processes such as adaptation and convergent evolution across a variety of applications. Here we propose a dynamic programming algorithm for fast joint likelihood-based reconstruction of ancestral sequences under the Poisson Indel Process (PIP). Unlike previous approaches, our method, named ARPIP, enables the reconstruction with insertions and deletions based on an explicit indel model. Consequently, inferred indel events have an explicit biological interpretation. Likelihood computation is achieved in linear time with respect to the number of sequences. Our method consists of two steps, namely finding the most probable indel points and reconstructing ancestral sequences. First, we find the most likely indel points and prune the phylogeny to reflect the insertion and deletion events per site. Second, we infer the ancestral states on the pruned subtree in a manner similar to FastML. We applied ARPIP on simulated datasets and on real data from the Betacoronavirus genus. ARPIP reconstructs both the indel events and substitutions with a high degree of accuracy. Our method fares well when compared to established state-of-the-art methods such as FastML and PAML. Moreover, the method can be extended to explore both optimal and suboptimal reconstructions, include rate heterogeneity through time and more. We believe it will expand the range of novel applications of ancestral sequence reconstruction.', datatype=rdflib.XSD.string)
+g.add((s, ns_dct.abstract, o))
+
+o = rdflib.Literal('Modern phylogenetic methods allow inference of ancestral molecular sequences given an alignment and phylogeny relating present-day sequences. This provides insight into the evolutionary history of molecules, helping to understand gene function and to study biological processes such as adaptation and convergent evolution across a variety of applications. Here, we propose a dynamic programming algorithm for fast joint likelihood-based reconstruction of ancestral sequences under the Poisson Indel Process (PIP). Unlike previous approaches, our method, named ARPIP, enables the reconstruction with insertions and deletions based on an explicit indel model. Consequently, inferred indel events have an explicit biological interpretation. Likelihood computation is achieved in linear time with respect to the number of sequences. Our method consists of two steps, namely finding the most probable indel points and reconstructing ancestral sequences. First, we find the most likely indel points and prune the phylogeny to reflect the insertion and deletion events per site. Second, we infer the ancestral states on the pruned subtree in a manner similar to FastML. We applied ARPIP (Ancestral Reconstruction under PIP) on simulated data sets and on real data from the Betacoronavirus genus. ARPIP reconstructs both the indel events and substitutions with a high degree of accuracy. Our method fares well when compared to established state-of-the-art methods such as FastML and PAML. Moreover, the method can be extended to explore both optimal and suboptimal reconstructions, include rate heterogeneity through time and more. We believe it will expand the range of novel applications of ancestral sequence reconstruction. [Ancestral sequences; dynamic programming; evolutionary stochastic process; indel; joint ancestral sequence reconstruction; maximum likelihood; Poisson Indel Process; phylogeny; SARS-CoV.]', datatype=rdflib.XSD.string)
+g.add((s, ns_dct.bibliographicCitation, o))
+
+g.add((s, ns_dct.license, rdflib.URIRef('https://creativecommons.org/licenses/by-nc/4.0/')))
+g.add((s, ns_dct.license, rdflib.Literal('Creative Commons CC BY-NC', datatype=rdflib.XSD.string)))
+
+g.add((s, ns_dct.relation, rdflib.URIRef('https://doi.org/10.5061/dryad.wstqjq2nj')))
+
 g.add((s, rdflib.RDF.type, ns_dct.BibliographicResource))
 g.add((s, rdflib.RDF.type, ns_bibo.Article))
 
 
 # related appendices
 s = rdflib.URIRef('https://doi.org/10.5281/zenodo.7078704')
+g.add((s, ns_dct.relation, rdflib.URIRef('https://doi.org/10.5061/dryad.wstqjq2nj')))
+
+g.add((s, ns_dct.hasFormat, rdflib.URIRef('https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1')))
+
+g.add((s, ns_dct.isPartof, rdflib.URIRef('https://doi.org/10.5061/dryad.wstqjq2nj')))
+
+g.add((s, rdflib.RDF.type, ns_dct.BibliographicResource))
+g.add((s, rdflib.RDF.type, ns_bibo.Article))
 
 
+# appendices in PDF format
+s = rdflib.URIRef('https://zenodo.org/records/7078704/files/ARPIP_appendices.pdf?download=1')
+g.add((s, ns_dct.hasFormat, rdflib.Literal('application/pdf', datatype=rdflib.XSD.string)))
+
+g.add((s, ns_owl.hasChecksum, rdflib.Literal('0c1f6e998da89735e3bb5200f8d81977', datatype=rdflib.XSD.string)))
+
+g.add((s, rdflib.RDF.type, ns_bibo.Document))
+
+
+# creator Manuel Gil
+s = ns_ex.ManuelGil
+g.add((s, ns_foaf.givenName, rdflib.Literal('Manuel', datatype=rdflib.XSD.string)))
+g.add((s, ns_foaf.familyName, rdflib.Literal('Gil', datatype=rdflib.XSD.string)))
+g.add((s, ns_foaf.mbox, rdflib.URIRef('mailto:manuel.gil@zhaw.ch')))
+g.add((s, ns_ex.worksFor, rdflib.URIRef('http://viaf.org/viaf/152303235')))
+g.add((s, ns_ex.workplaceHomepage, rdflib.URIRef('https://www.zhaw.ch/de/ueber-uns/person/giln')))
+g.add((s, rdflib.RDF.type, ns_foaf.Person))
+
+
+# creator Massimo Maiolo
+s = ns_ex.MassimoMaiolo
+g.add((s, ns_foaf.givenName, rdflib.Literal('Massimo', datatype=rdflib.XSD.string)))
+g.add((s, ns_foaf.familyName, rdflib.Literal('Maiolo', datatype=rdflib.XSD.string)))
+g.add((s, ns_owl.sameAs, rdflib.URIRef('https://orcid.org/0000-0001-5858-4185')))
+g.add((s, rdflib.RDF.type, ns_foaf.Person))
+
+
+# creator Gholamhossein Jowkar
+s = ns_ex.GholamhosseinJowkar
+g.add((s, ns_foaf.givenName, rdflib.Literal('Gholamhossein', datatype=rdflib.XSD.string)))
+g.add((s, ns_foaf.familyName, rdflib.Literal('Jowkar', datatype=rdflib.XSD.string)))
+g.add((s, ns_owl.sameAs, rdflib.URIRef('https://orcid.org/0000-0002-3512-0032')))
+g.add((s, rdflib.RDF.type, ns_foaf.Person))
+
+
+# creator Jūlija Pečerska
+s = ns_ex.JūlijaPečerska
+g.add((s, ns_foaf.givenName, rdflib.Literal('Jūlija', datatype=rdflib.XSD.string)))
+g.add((s, ns_foaf.familyName, rdflib.Literal('Pečerska', datatype=rdflib.XSD.string)))
+g.add((s, ns_owl.sameAs, rdflib.URIRef('https://orcid.org/0000-0002-3499-6200>')))
+g.add((s, ns_foaf.mbox, rdflib.URIRef('mailto:julija.pecerska@zhaw.ch')))
+g.add((s, ns_ex.worksFor, rdflib.URIRef('http://viaf.org/viaf/152303235')))
+g.add((s, ns_ex.workplaceHomepage, rdflib.URIRef('https://www.zhaw.ch/de/ueber-uns/person/pece')))
+g.add((s, rdflib.RDF.type, ns_foaf.Person))
+
+
+# creator Maria Anisimova
+
+# serialize turtle
 d = g.serialize(format='ttl')
 print(d)
 

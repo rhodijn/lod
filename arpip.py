@@ -207,7 +207,7 @@ g.add((s, rdflib.RDF.type, ns_foaf.Person))
 s = ns_ex.JūlijaPečerska
 g.add((s, ns_foaf.givenName, rdflib.Literal('Jūlija', datatype=rdflib.XSD.string)))
 g.add((s, ns_foaf.familyName, rdflib.Literal('Pečerska', datatype=rdflib.XSD.string)))
-g.add((s, ns_owl.sameAs, rdflib.URIRef('https://orcid.org/0000-0002-3499-6200>')))
+g.add((s, ns_owl.sameAs, rdflib.URIRef('https://orcid.org/0000-0002-3499-6200')))
 g.add((s, ns_foaf.mbox, rdflib.URIRef('mailto:julija.pecerska@zhaw.ch')))
 g.add((s, ns_ex.worksFor, rdflib.URIRef('http://viaf.org/viaf/152303235')))
 g.add((s, ns_ex.workplaceHomepage, rdflib.URIRef('https://www.zhaw.ch/de/ueber-uns/person/pece')))
@@ -215,6 +215,22 @@ g.add((s, rdflib.RDF.type, ns_foaf.Person))
 
 
 # creator Maria Anisimova
+s = ns_ex.MariaAnisimova
+g.add((s, ns_foaf.givenName, rdflib.Literal('Maria', datatype=rdflib.XSD.string)))
+g.add((s, ns_foaf.familyName, rdflib.Literal('Anisimova', datatype=rdflib.XSD.string)))
+g.add((s, ns_foaf.mbox, rdflib.URIRef('mailto:maria.anisimova@zhaw.ch')))
+g.add((s, ns_ex.worksFor, rdflib.URIRef('http://viaf.org/viaf/152303235')))
+g.add((s, ns_ex.workplaceHomepage, rdflib.URIRef('https://www.zhaw.ch/de/ueber-uns/person/anis')))
+g.add((s, rdflib.RDF.type, ns_foaf.Person))
+
+
+# readme in Markdown format
+s = rdflib.URIRef('https://datadryad.org/downloads/file_stream/1688696')
+g.add((s, ns_dcat.byteSize, rdflib.Literal('9.34 KB', datatype=rdflib.XSD.byte)))
+g.add((s, ns_dcat.hasFormat, rdflib.Literal('.md', datatype=rdflib.XSD.string)))
+g.add((s, rdflib.RDF.type, ns_fabio.Document))
+g.add((s, rdflib.RDF.type, ns_fabio.InstructionManual))
+
 
 # serialize turtle
 d = g.serialize(format='ttl')

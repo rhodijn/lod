@@ -138,14 +138,14 @@ ex:MariaAnisimova
 # readme in Markdown format
 <https://datadryad.org/downloads/file_stream/1688696>
     dcat:byteSize "9.34 KB"^^xsd:byte ;
-    dct:format ".md"^^xsd:string ;
+    dct:hasFormat ".md"^^xsd:string ;
     a fabio:Document,
         fabio:InstructionManual .
 
 # dataset for download in ZIP format
 <https://datadryad.org/downloads/file_stream/1688697>
     dcat:byteSize "15.63 MB"^^xsd:byte ;
-    dct:format ".zip"^^xsd:string ;
+    dct:hasFormat ".zip"^^xsd:string ;
     a fabio:Dataset .
 
 # public domain license

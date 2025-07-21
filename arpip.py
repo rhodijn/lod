@@ -69,17 +69,29 @@ g.add((s, p, ns_ex.GholamhosseinJowkar))
 g.add((s, p, ns_ex.JūlijaPečerska))
 g.add((s, p, ns_ex.MariaAnisimova))
 
-g.add((s, RDF.type, ns_fabio.Dataset))
+o = rdflib.Literal('ARPIP: Ancestral sequence Reconstruction with insertions and deletions under the Poisson Indel Process', datatype=rdflib.XSD.string)
 
+g.add((s, ns_dct.title, o))
+
+g.add((s, ns_fabio.hasPublicationYear, rdflib.Literal(2022, datatype=rdflib.XSD.integer)))
+
+p = ns_dct.modified
+
+g.add((s, p, rdflib.Literal('2022-07-26', datatype=rdflib.XSD.date)))
+
+p = ns_dct.relation
+
+g.add((s, p, rdflib.URIRef('https://doi.org/10.1093/sysbio/syac050')))
+g.add((s, p, rdflib.URIRef('https://doi.org/10.5281/zenodo.7078704')))
+
+g.add((s, rdflib.RDF.type, ns_fabio.Dataset))
 
 # article
 s = rdflib.URIRef('https://doi.org/10.1093/sysbio/syac050')
 
 
-p = RDF.type
-
-g.add((s, p, ns_dct.BibliographicResource))
-g.add((s, p, ns_bibo.Article))
+g.add((s, rdflib.RDF.type, ns_dct.BibliographicResource))
+g.add((s, rdflib.RDF.type, ns_bibo.Article))
 
 
 # related appendices

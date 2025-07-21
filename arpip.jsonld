@@ -6,13 +6,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/sysbio/syac050",
-      "@type": [
-        "http://purl.org/dc/terms/BibliographicResource",
-        "http://purl.org/ontology/bibo/Article"
-      ]
-    },
-    {
       "@id": "https://datadryad.org/dataset/doi:10.5061/dryad.wstqjq2nj",
       "@type": "http://purl.org/spar/fabio/Dataset",
       "http://purl.org/dc/terms/creator": [
@@ -31,6 +24,27 @@
         {
           "@id": "http://example.org/MariaAnisimova"
         }
+      ],
+      "http://purl.org/dc/terms/modified": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-07-26"
+      },
+      "http://purl.org/dc/terms/relation": [
+        {
+          "@id": "https://doi.org/10.1093/sysbio/syac050"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7078704"
+        }
+      ],
+      "http://purl.org/dc/terms/title": "ARPIP: Ancestral sequence Reconstruction with insertions and deletions under the Poisson Indel Process",
+      "http://purl.org/spar/fabio/hasPublicationYear": 2022
+    },
+    {
+      "@id": "https://doi.org/10.1093/sysbio/syac050",
+      "@type": [
+        "http://purl.org/dc/terms/BibliographicResource",
+        "http://purl.org/ontology/bibo/Article"
       ]
     }
   ]

@@ -57,9 +57,8 @@
         ex:MariaAnisimova ;
     bibo:issn "1063-5157"^^xsd:string ;
     bibo:volume "72"^^xsd:integer ;
-    dc:title "Systematic Biology"^^xsd:string ;
-    dct:issued "2022-03"^^xsd:gYearMonth ;
     dc:title "ARPIP: Ancestral Sequence Reconstruction with Insertions and Deletions under the Poisson Indel Process"^^xsd:string ;
+    dct:issued "2022-03"^^xsd:gYearMonth ;
     dct:subject "computer and information sciences"^^xsd:string ,
         "ancestral sequences"^^xsd:string ,
         "coronaviridae"^^xsd:string ,

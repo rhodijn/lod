@@ -260,6 +260,7 @@ g.add((s, ns_foaf.homepage, rdflib.URIRef('https://www.zhaw.ch/')))
 d = g.serialize(format='ttl')
 print(d)
 
+
 # generate json-ld file
 context = {
         '@language': 'en',

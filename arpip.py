@@ -257,8 +257,10 @@ g.add((s, ns_foaf.homepage, rdflib.URIRef('https://www.zhaw.ch/')))
 
 
 # serialize turtle
-d = g.serialize(format='ttl')
-print(d)
+data = g.serialize(format='ttl')
+
+with open('arpip_v2.ttl', 'w') as f:
+    f.write(data)
 
 
 # generate json-ld file
@@ -275,5 +277,5 @@ data = g.serialize(
     encoding='utf-8',
     )
 
-with open('arpip.jsonld', 'wb') as f:
+with open('arpip_v2.jsonld', 'wb') as f:
     f.write(data)

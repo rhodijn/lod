@@ -226,7 +226,7 @@ g.add((s, rdflib.RDF.type, ns_foaf.Person))
 
 # readme in Markdown format
 s = rdflib.URIRef('https://datadryad.org/downloads/file_stream/1688696')
-g.add((s, ns_dcat.byteSize, rdflib.Literal('9.34 KB', datatype=rdflib.XSD.byte)))
+g.add((s, ns_dcat.byteSize, rdflib.Literal('9.34 KB', datatype=rdflib.XSD.string)))
 g.add((s, ns_dcat.hasFormat, rdflib.Literal('.md', datatype=rdflib.XSD.string)))
 g.add((s, rdflib.RDF.type, ns_fabio.Document))
 g.add((s, rdflib.RDF.type, ns_fabio.InstructionManual))
@@ -234,8 +234,8 @@ g.add((s, rdflib.RDF.type, ns_fabio.InstructionManual))
 
 # dataset for download in ZIP format
 s = rdflib.URIRef('https://datadryad.org/downloads/file_stream/1688697')
-g.add((s, ns_dcat.byteSize, rdflib.Literal('15.63 MB', datatype=rdflib.XSD.byte)))
-g.add((s, ns_dct.hasFormat, rdflib.Literal('.zip', datatype=rdflib.XSD.bytestring)))
+g.add((s, ns_dcat.byteSize, rdflib.Literal('15.63 MB', datatype=rdflib.XSD.string)))
+g.add((s, ns_dct.hasFormat, rdflib.Literal('.zip', datatype=rdflib.XSD.string)))
 g.add((s, rdflib.RDF.type, ns_fabio.Dataset))
 
 
@@ -266,8 +266,17 @@ with open('arpip_v2.ttl', 'w') as f:
 # generate json-ld file
 context = {
         '@language': 'en',
-        'wtm': 'http://purl.org/heals/food/',
-        'ind': 'http://purl.org/heals/ingredient/',
+        'bibo': 'http://purl.org/ontology/bibo/',
+        'dc': 'http://purl.org/dc/elements/1.1/',
+        'dcat': 'http://www.w3.org/ns/dcat#',
+        'dct': 'http://purl.org/dc/terms/',
+        'ex': 'http://example.org/',
+        'fabio': 'http://purl.org/spar/fabio/',
+        'foaf': 'http://xmlns.com/foaf/0.1/',
+        'owl': 'http://www.w3.org/2002/07/owl#',
+        'prism': 'http://prismstandard.org/namespaces/basic/2.1/',
+        'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+        'xsd': 'http://www.w3.org/2001/XMLSchema#'
     }
 
 data = g.serialize(
